@@ -40,13 +40,11 @@ jobs:
           bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
-          cname: ${{ secrets.CNAME }} # 如果你有自定义域名
-          enable_jekyll: false
-          full_commit_message: ${{ github.event.head_commit.message }}
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
+        run: |
+          cd _site
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git init
+          git add -A
+          git commit -m "Deploy site update via GitHub Actions"
+          git push -f https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git master
