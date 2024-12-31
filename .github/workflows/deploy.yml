@@ -9,8 +9,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -22,14 +27,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
+          cache: "npm"
 
       - name: Install dependencies
         run: |
-          bundle install
           npm install
+          npm install -g grunt-cli
+          bundle install
 
-      - name: Build site
-        run: bundle exec jekyll build
+      - name: Run Grunt build
+        run: grunt
+
+      - name: Build Jekyll site
+        run: JEKYLL_ENV=production bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
@@ -40,3 +50,5 @@ jobs:
           publish_dir: ./_site
           publish_branch: gh-pages
           force_orphan: true
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
