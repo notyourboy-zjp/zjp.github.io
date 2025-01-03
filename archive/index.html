@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="这里是 @NotYourBoy张佳鹏 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员">
+    <meta name="keywords" content="张佳鹏, NotYourBoy张佳鹏, NotYourBoy, 鬼栈, notyourboy, @notyourboy, 张佳鹏的博客, NotYourBoy Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Archive - 张佳鹏的博客 | NotYourBoy Blog">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="「我干了什么 究竟拿时间换了什么」">
+    
+    <meta property="og:image" content="https://notyourboy-zjp.github.io/zjp.github.io/zjp.github.io/img/avatar.jpg">
+    <meta property="og:url" content="https://notyourboy-zjp.github.io/zjp.github.io/archive/">
+    <meta property="og:site_name" content="张佳鹏的博客 | NotYourBoy Blog">
+
+    <title>Archive - 张佳鹏的博客 | NotYourBoy Blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/zjp.github.io/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/zjp.github.io/img/favicon.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://notyourboy-zjp.github.io/zjp.github.io/archive/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/zjp.github.io/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/zjp.github.io/css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-6487568398225121" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/zjp.github.io/">NotYourBoy Blog</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/zjp.github.io/">Home</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/zjp.github.io/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/zjp.github.io/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--
+Credits: this page shamelessly borrowed a lot from:
+https://github.com/kitian616/jekyll-TeXt-theme
+-->
+<!-- Page Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/zjp.github.io/img/bg-little-universe.jpg');
+        background: ;
+    }
+
+    
+</style>
+
+
+
+
+
+
+
+<header class="intro-header" style="background-image: url('/zjp.github.io/img/bg-little-universe.jpg')">
+  <div class="header-mask"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="site-heading" id="tag-heading">
+        
+          <h1>Archive</h1>
+          <span class="subheading">「我干了什么 究竟拿时间换了什么」</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<!-- Tags (as filter) -->
+			<div id='tag_cloud' class="tags tags-sup js-tags">
+				<a class="tag-button--all" data-encode="">
+					Show All
+					<sup>79</sup>
+				</a>
+
+				
+				
+				
+				
+				
+				<a data-sort="0039"
+					data-encode="%E7%AC%94%E8%AE%B0" class="tag-button" title="笔记"
+					rel="40">
+					笔记
+					<sup>40</sup>
+				</a>
+				
+				<a data-sort="0043"
+					data-encode="Coq" class="tag-button" title="Coq"
+					rel="36">
+					Coq
+					<sup>36</sup>
+				</a>
+				
+				<a data-sort="0043"
+					data-encode="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29" class="tag-button" title="SF (软件基础)"
+					rel="36">
+					SF (软件基础)
+					<sup>36</sup>
+				</a>
+				
+				<a data-sort="0057"
+					data-encode="Web" class="tag-button" title="Web"
+					rel="22">
+					Web
+					<sup>22</sup>
+				</a>
+				
+				<a data-sort="0060"
+					data-encode="PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29" class="tag-button" title="PLF (编程语言基础)"
+					rel="19">
+					PLF (编程语言基础)
+					<sup>19</sup>
+				</a>
+				
+				<a data-sort="0063"
+					data-encode="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29" class="tag-button" title="LF (逻辑基础)"
+					rel="16">
+					LF (逻辑基础)
+					<sup>16</sup>
+				</a>
+				
+				<a data-sort="0065"
+					data-encode="%E7%9F%A5%E4%B9%8E" class="tag-button" title="知乎"
+					rel="14">
+					知乎
+					<sup>14</sup>
+				</a>
+				
+				<a data-sort="0071"
+					data-encode="PWA" class="tag-button" title="PWA"
+					rel="8">
+					PWA
+					<sup>8</sup>
+				</a>
+				
+				<a data-sort="0073"
+					data-encode="%E4%BA%A7%E5%93%81" class="tag-button" title="产品"
+					rel="6">
+					产品
+					<sup>6</sup>
+				</a>
+				
+				<a data-sort="0073"
+					data-encode="UX%2FUI" class="tag-button" title="UX/UI"
+					rel="6">
+					UX/UI
+					<sup>6</sup>
+				</a>
+				
+				<a data-sort="0075"
+					data-encode="JavaScript" class="tag-button" title="JavaScript"
+					rel="4">
+					JavaScript
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0075"
+					data-encode="Meta" class="tag-button" title="Meta"
+					rel="4">
+					Meta
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0075"
+					data-encode="Slides" class="tag-button" title="Slides"
+					rel="4">
+					Slides
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0076"
+					data-encode="%E8%AF%91" class="tag-button" title="译"
+					rel="3">
+					译
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0076"
+					data-encode="%E9%98%BF%E9%87%8C" class="tag-button" title="阿里"
+					rel="3">
+					阿里
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="%E5%9F%BA%E7%A1%80" class="tag-button" title="基础"
+					rel="2">
+					基础
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="%E5%BE%AE%E4%BF%A1" class="tag-button" title="微信"
+					rel="2">
+					微信
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA" class="tag-button" title="计算理论"
+					rel="2">
+					计算理论
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="C" class="tag-button" title="C"
+					rel="2">
+					C
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="C%2B%2B" class="tag-button" title="C++"
+					rel="2">
+					C++
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="CSS" class="tag-button" title="CSS"
+					rel="2">
+					CSS
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="En" class="tag-button" title="En"
+					rel="2">
+					En
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="Vim" class="tag-button" title="Vim"
+					rel="2">
+					Vim
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0077"
+					data-encode="hUX+%E9%9A%8F%E6%83%B3%E5%BD%95" class="tag-button" title="hUX 随想录"
+					rel="2">
+					hUX 随想录
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0078"
+					data-encode="Facebook" class="tag-button" title="Facebook"
+					rel="1">
+					Facebook
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0078"
+					data-encode="Flash" class="tag-button" title="Flash"
+					rel="1">
+					Flash
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0078"
+					data-encode="Haskell" class="tag-button" title="Haskell"
+					rel="1">
+					Haskell
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0078"
+					data-encode="QC+%28Quickcheck%29" class="tag-button" title="QC (Quickcheck)"
+					rel="1">
+					QC (Quickcheck)
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0078"
+					data-encode="React" class="tag-button" title="React"
+					rel="1">
+					React
+					<sup>1</sup>
+				</a>
+			</div>
+
+			<!-- Article List -->
+			<div class="mini-post-list js-result d-none"><section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">2021</span>
+					</span><div class="post-preview item" data-tags="Web,JavaScript">
+						<a href="/zjp.github.io/2021/04/10/js-20yrs-preface/">
+							<h2 class="post-title">
+								《JavaScript 二十年》推荐语
+							</h2>
+							
+						</a>
+						<hr>
+					</div></section><section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">2020</span>
+					</span><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,Meta">
+						<a href="/zjp.github.io/2020/07/05/reflection-2020/">
+							<h2 class="post-title">
+								作为一个前端，看不懂@黄玄 的几乎每一个回答，只有我自己吗？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Taking this chance to reflect on myself
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%AC%94%E8%AE%B0,%E5%9F%BA%E7%A1%80,C,C%2B%2B">
+						<a href="/zjp.github.io/2020/06/21/data-rep-float/">
+							<h2 class="post-title">
+								Data Representation - Floating Point Numbers
+							</h2>
+							
+							<h3 class="post-subtitle">
+								「数据表示」浮点数
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%AC%94%E8%AE%B0,%E5%9F%BA%E7%A1%80,C,C%2B%2B">
+						<a href="/zjp.github.io/2020/06/19/data-rep-int/">
+							<h2 class="post-title">
+								Data Representation - Integer
+							</h2>
+							
+							<h3 class="post-subtitle">
+								「数据表示」整数
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="">
+						<a href="/zjp.github.io/2020/05/05/pl-chart/">
+							<h2 class="post-title">
+								My Programming Languages Spectrum
+							</h2>
+							
+							<h3 class="post-subtitle">
+								我的编程语言光谱
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,Web,React">
+						<a href="/zjp.github.io/2020/04/03/react-hooks-vue-composition/">
+							<h2 class="post-title">
+								React Hooks 是否可以改为用类似 Vue 3 Composition API 的方式实现？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Thinking in React vs. Thinking in Vue
+							</h3>
+							
+						</a>
+						<hr>
+					</div></section><section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">2019</span>
+					</span><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,Web,PWA">
+						<a href="/zjp.github.io/2019/11/19/is-pwa-dead-in-2019/">
+							<h2 class="post-title">
+								2019 年 PWA(Progressive Web App) 凉了吗？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Is PWA effectively dead in 2019?
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Vim">
+						<a href="/zjp.github.io/2019/09/03/vim-from-finder/">
+							<h2 class="post-title">
+								把「终端下的 Vim」作为 macOS Finder 的打开方式
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Open file with terminal Vim from the macOS Finder
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,QC+%28Quickcheck%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/09/02/sf-qc-02-typeclasses/">
+							<h2 class="post-title">
+								「SF-QC」2 TypeClasses
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Quickcheck - A Tutorial on Typeclasses in Coq
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/19/sf-plf-19-partial-eval/">
+							<h2 class="post-title">
+								「SF-PLF」19 PE
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Partial Evaluation
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/18/sf-plf-18-use-auto/">
+							<h2 class="post-title">
+								「SF-PLF」18 UseAuto
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Theory And Practice Of Automation In Coq Proofs
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/17/sf-plf-17-use-tactics/">
+							<h2 class="post-title">
+								「SF-PLF」17 UseTactics
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Tactic Library For Coq
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/16/sf-plf-16-lib-tactics/">
+							<h2 class="post-title">
+								「SF-PLF」16 LibTactics
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - A Collection of Handy General-Purpose Tactics
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/15/sf-plf-15-norm-STLC/">
+							<h2 class="post-title">
+								「SF-PLF」15 Norm
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Normalization of STLC
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/14/sf-plf-14-record-sub/">
+							<h2 class="post-title">
+								「SF-PLF」14 RecordSub
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Subtyping with Records
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/13/sf-plf-13-references/">
+							<h2 class="post-title">
+								「SF-PLF」13 References
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Typing Mutable References
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/12/sf-plf-12-records/">
+							<h2 class="post-title">
+								「SF-PLF」12 Records
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Adding Records To STLC
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/11/sf-plf-11-typechecking/">
+							<h2 class="post-title">
+								「SF-PLF」11. TypeChecking
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - A Typechecker for STLC
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/10/sf-plf-10-subtyping/">
+							<h2 class="post-title">
+								「SF-PLF」10 Sub
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Subtyping (子类型化)
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/09/sf-plf-09-more-STLC/">
+							<h2 class="post-title">
+								「SF-PLF」9 MoreStlc
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - More on The Simply Typed Lambda-Calculus
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/08/sf-plf-08-STLC-prop/">
+							<h2 class="post-title">
+								「SF-PLF」8 StlcProp
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Properties of STLC
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/07/sf-plf-07-STLC/">
+							<h2 class="post-title">
+								「SF-PLF」7 Stlc
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - The Simply Typed Lambda-Calculus
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/06/sf-plf-06-types/">
+							<h2 class="post-title">
+								「SF-PLF」6 Types
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Type Systems
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/05/sf-plf-05-smallstep/">
+							<h2 class="post-title">
+								「SF-PLF」5 Smallstep
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Small-Step Operational Semantics
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/04/sf-plf-04-hoare-logic/">
+							<h2 class="post-title">
+								「SF-PLF」4 HoareAsLogic
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Hoare Logic as a Logic
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/03/sf-plf-03-hoare-2/">
+							<h2 class="post-title">
+								「SF-PLF」3 Hoare2
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Hoare Logic, Part II
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/02/sf-plf-02-hoare-1/">
+							<h2 class="post-title">
+								「SF-PLF」2 Hoare
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Hoare Logic, Part I 
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,PLF+%28%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/03/01/sf-plf-01-equiv/">
+							<h2 class="post-title">
+								「SF-PLF」1 Equiv
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Programming Language Foundations - Program Equivalence (程序的等价关系)
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/16/sf-lf-16-auto/">
+							<h2 class="post-title">
+								「SF-LC」16 Auto
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - More Automation
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/15/sf-lf-15-extraction/">
+							<h2 class="post-title">
+								「SF-LC」15 Extraction
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Extracting ML From Coq
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/14/sf-lf-14-imp-ceval/">
+							<h2 class="post-title">
+								「SF-LC」14 ImpCEvalFun
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - An Evaluation Function For Imp
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/13/sf-lf-13-imp-parser/">
+							<h2 class="post-title">
+								「SF-LC」13 ImpParser
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Lexing And Parsing In Coq
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/12/sf-lf-12-imp/">
+							<h2 class="post-title">
+								「SF-LC」12 Imp
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Simple Imperative Programs
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/11/sf-lf-11-rel/">
+							<h2 class="post-title">
+								「SF-LC」11 Rel
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Properties of Relations
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/10/sf-lf-10-ind-principle/">
+							<h2 class="post-title">
+								「SF-LC」10 IndPrinciples
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Induction Principles
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/09/sf-lf-09-proof-object/">
+							<h2 class="post-title">
+								「SF-LC」9 ProofObjects
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - The Curry-Howard Correspondence 
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/08/sf-lf-08-map/">
+							<h2 class="post-title">
+								「SF-LC」8 Maps
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Total and Partial Maps
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/07/sf-lf-07-indprop/">
+							<h2 class="post-title">
+								「SF-LC」7 Ind Prop
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Inductively Defined Propositions (归纳定义命题)
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/06/sf-lf-06-logic/">
+							<h2 class="post-title">
+								「SF-LC」6 Logic
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Logic in Coq
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/05/sf-lf-05-tactics/">
+							<h2 class="post-title">
+								「SF-LC」5 Tactics
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - More Basic Tactics
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/04/sf-lf-04-poly/">
+							<h2 class="post-title">
+								「SF-LC」4 Poly
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Polymorphism and Higher-Order Functions
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/03/sf-lf-03-list/">
+							<h2 class="post-title">
+								「SF-LC」3 List
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Working with Structured Data
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/02/sf-lf-02-induction/">
+							<h2 class="post-title">
+								「SF-LC」2 Induction
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Proof by Induction
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="LF+%28%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80%29,SF+%28%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%29,Coq,%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2019/01/01/sf-lf-01-basics/">
+							<h2 class="post-title">
+								「SF-LC」1 Basics
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Logical Foundations - Functional Programming in Coq
+							</h3>
+							
+						</a>
+						<hr>
+					</div></section><section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">2018</span>
+					</span><div class="post-preview item" data-tags="Vim">
+						<a href="/zjp.github.io/2018/10/06/vim-cn-im/">
+							<h2 class="post-title">
+								Vim 与中文输入法
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Using Vim with non-english input method
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Haskell,%E7%AC%94%E8%AE%B0,En">
+						<a href="/zjp.github.io/2018/09/27/avoiding-success-at-all-cost/">
+							<h2 class="post-title">
+								Avoiding success at all cost
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Watching "Escape from the Ivory Tower: The Haskell Journey"
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Facebook,Meta">
+						<a href="/zjp.github.io/2018/06/30/dreamer/">
+							<h2 class="post-title">
+								程序员中的梦想家
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Dreamers among programmers
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,PWA">
+						<a href="/zjp.github.io/2018/05/11/pwa-zh-preface/">
+							<h2 class="post-title">
+								《PWA 实战》推荐序
+							</h2>
+							
+						</a>
+						<hr>
+					</div></section><section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">2017</span>
+					</span><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA">
+						<a href="/zjp.github.io/2017/12/12/halting-problem/">
+							<h2 class="post-title">
+								如何通俗地解释停机问题？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								How to explain the Halting Problem?
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA">
+						<a href="/zjp.github.io/2017/12/12/uncomputable-funcs/">
+							<h2 class="post-title">
+								如何证明不可计算的函数比可计算的函数多？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Why is there more uncomputable functions?
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,CSS,%E7%9F%A5%E4%B9%8E">
+						<a href="/zjp.github.io/2017/10/06/css-complaints/">
+							<h2 class="post-title">
+								为什么 CSS 这么难学？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Why I dislike CSS as a programming language
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,Flash">
+						<a href="/zjp.github.io/2017/07/26/farewell-flash/">
+							<h2 class="post-title">
+								Farewell, Flash. 感谢你，但这一次是真正的永别。
+							</h2>
+							
+							<h3 class="post-subtitle">
+								So long, and thanks for all the Flash
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,PWA">
+						<a href="/zjp.github.io/2017/07/12/upgrading-eleme-to-pwa/">
+							<h2 class="post-title">
+								饿了么的 PWA 升级实践
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Upgrading Ele.me to Progressive Web App
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,PWA,En">
+						<a href="/zjp.github.io/2017/05/28/sw-precache/">
+							<h2 class="post-title">
+								How does SW-Precache works?
+							</h2>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,%E7%9F%A5%E4%B9%8E">
+						<a href="/zjp.github.io/2017/04/06/html-document/">
+							<h2 class="post-title">
+								如何理解 <code>document</code> 对象是 <code>HTMLDocument</code> 的实例？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Why is <code>document</code> an instance of <code>HTMLDocument</code>?
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,PWA">
+						<a href="/zjp.github.io/2017/02/09/nextgen-web-pwa/">
+							<h2 class="post-title">
+								下一代 Web 应用模型 —— Progressive Web App
+							</h2>
+							
+							<h3 class="post-subtitle">
+								The Next Generation Application Model For The Web - Progressive Web App
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,%E5%BE%AE%E4%BF%A1,UX%2FUI">
+						<a href="/zjp.github.io/2017/01/09/wechat-miniapp-ux/">
+							<h2 class="post-title">
+								如何客观地评价「小程序」的体验?
+							</h2>
+							
+							<h3 class="post-subtitle">
+								Wechat Mini-Program vs. the Web, a UX comparison
+							</h3>
+							
+						</a>
+						<hr>
+					</div></section><section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">2016</span>
+					</span><div class="post-preview item" data-tags="Slides,Web,PWA">
+						<a href="/zjp.github.io/2016/11/20/sw-101-gdgdf/">
+							<h2 class="post-title">
+								Service Worker 101「GDG DevFest 2016 北京」
+							</h2>
+							
+							<h3 class="post-subtitle">
+								🎞  Slides:Service Worker 101, Working Offline and Instant Loading (GDG DevFest 2016 Beijing)
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Slides,Web,PWA">
+						<a href="/zjp.github.io/2016/10/20/pwa-qcon2016/">
+							<h2 class="post-title">
+								Progressive Web Apps，复兴序章「QCon 上海 2016」
+							</h2>
+							
+							<h3 class="post-subtitle">
+								🎞  Slides:Progressive Web Apps, Make Web Great Again. (QCon Shanghai 2016)
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,%E5%BE%AE%E4%BF%A1">
+						<a href="/zjp.github.io/2016/09/22/the-open-web/">
+							<h2 class="post-title">
+								Web 在继续离我们远去
+							</h2>
+							
+							<h3 class="post-subtitle">
+								After the release of Wechat Mini-Program
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Slides,Web,PWA">
+						<a href="/zjp.github.io/2016/06/05/pwa-in-my-pov/">
+							<h2 class="post-title">
+								Progressive Web App 之我见
+							</h2>
+							
+							<h3 class="post-subtitle">
+								🎞  Slides:Progressive Web App, in my points of view
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,JavaScript,%E8%AF%91">
+						<a href="/zjp.github.io/2016/02/01/React-vs-Angular2/">
+							<h2 class="post-title">
+								「译」React vs Angular 2：冰与火之歌
+							</h2>
+							
+							<h3 class="post-subtitle">
+								React versus Angular 2: There Will Be Blood
+							</h3>
+							
+						</a>
+						<hr>
+					</div></section><section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">2015</span>
+					</span><div class="post-preview item" data-tags="Web,CSS">
+						<a href="/zjp.github.io/2015/12/28/css-sucks-2015/">
+							<h2 class="post-title">
+								都 2015 年了，CSS 怎么还是这么糟糕
+							</h2>
+							
+							<h3 class="post-subtitle">
+								🎞  Slides:CSS Still Sucks 2015
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,%E8%AF%91">
+						<a href="/zjp.github.io/2015/12/15/ios9-safari-web/">
+							<h2 class="post-title">
+								「译」iOS 9，为前端世界都带来了些什么？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								iOS 9, Safari and the Web: 3D Touch, new Responsive Web Design, Native integration and HTML5 APIs
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,Web,UX%2FUI">
+						<a href="/zjp.github.io/2015/10/28/how-designer-learn-fe/">
+							<h2 class="post-title">
+								设计师如何学习前端？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								How designers learn front-end development?
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Web,JavaScript,%E8%AF%91">
+						<a href="/zjp.github.io/2015/09/22/js-version/">
+							<h2 class="post-title">
+								「译」ES5, ES6, ES2016, ES.Next: JavaScript 的版本是怎么回事？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Slides,Web,JavaScript">
+						<a href="/zjp.github.io/2015/07/09/js-module-7day/">
+							<h2 class="post-title">
+								JavaScript 模块化七日谈
+							</h2>
+							
+							<h3 class="post-subtitle">
+								🎞  Slides:JavaScript Modularization Journey
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E4%BA%A7%E5%93%81,%E9%98%BF%E9%87%8C">
+						<a href="/zjp.github.io/2015/06/15/alitrip-strategy/">
+							<h2 class="post-title">
+								聊聊「阿里旅行 · 去啊」
+							</h2>
+							
+							<h3 class="post-subtitle">
+								聊聊在线旅行行业与老东家的产品思路
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Meta,%E9%98%BF%E9%87%8C">
+						<a href="/zjp.github.io/2015/05/11/see-u-ali/">
+							<h2 class="post-title">
+								See you, Alibaba 
+							</h2>
+							
+							<h3 class="post-subtitle">
+								再见，阿里。
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="hUX+%E9%9A%8F%E6%83%B3%E5%BD%95,UX%2FUI">
+						<a href="/zjp.github.io/2015/04/15/os-metro/">
+							<h2 class="post-title">
+								hUX 随想录（二）：操作系统的浪漫主义 —— Metro 篇
+							</h2>
+							
+							<h3 class="post-subtitle">
+								信息、载体、抽象、UI 设计乱谈
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%AC%94%E8%AE%B0">
+						<a href="/zjp.github.io/2015/04/14/unix-linux-note/">
+							<h2 class="post-title">
+								Unix/Linux 扫盲笔记
+							</h2>
+							
+							<h3 class="post-subtitle">
+								不适合人类阅读，非常水的自我笔记
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="hUX+%E9%9A%8F%E6%83%B3%E5%BD%95,UX%2FUI">
+						<a href="/zjp.github.io/2015/03/25/digital-native/">
+							<h2 class="post-title">
+								hUX 随想录（一）：Digital native 数字原住民
+							</h2>
+							
+							<h3 class="post-subtitle">
+								 两岁的侄女天天叫着手机手机 
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,%E4%BA%A7%E5%93%81">
+						<a href="/zjp.github.io/2015/03/10/apple-event-2015/">
+							<h2 class="post-title">
+								如何评价 2015 年 3 月 9 日 Apple 春季发布会？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								聊聊科技与新式奢侈品
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="Meta">
+						<a href="/zjp.github.io/2015/01/29/hello-2015/">
+							<h2 class="post-title">
+								Hello 2015
+							</h2>
+							
+							<h3 class="post-subtitle">
+								 "Hello World, Hello Blog"
+							</h3>
+							
+						</a>
+						<hr>
+					</div></section><section>
+					<span class="fa listing-seperator">
+						<span class="tag-text">2014</span>
+					</span><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,%E4%BA%A7%E5%93%81">
+						<a href="/zjp.github.io/2014/12/13/wechat-block-kuaidi/">
+							<h2 class="post-title">
+								如何看待微信屏蔽快的打车事件？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								恰有小感。
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,Web">
+						<a href="/zjp.github.io/2014/11/20/responsive-web-design/">
+							<h2 class="post-title">
+								你们觉得响应式好呢，还是手机和PC端分开来写？
+							</h2>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,%E4%BA%A7%E5%93%81,%E9%98%BF%E9%87%8C">
+						<a href="/zjp.github.io/2014/10/01/why-alibaba-ux-sucks/">
+							<h2 class="post-title">
+								为什么阿里系软件体验都不好？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								或许这就是所谓的企业 DNA 
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,%E4%BA%A7%E5%93%81,UX%2FUI">
+						<a href="/zjp.github.io/2014/09/04/is-pure-android-better/">
+							<h2 class="post-title">
+								对中国用户而言，Pure Android 是否比 MIUI 或 Flyme 体验更好？
+							</h2>
+							
+							<h3 class="post-subtitle">
+								
+							</h3>
+							
+						</a>
+						<hr>
+					</div><div class="post-preview item" data-tags="%E7%9F%A5%E4%B9%8E,%E4%BA%A7%E5%93%81,UX%2FUI">
+						<a href="/zjp.github.io/2014/08/16/miui6/">
+							<h2 class="post-title">
+								如何评价 MIUI 6？
+							</h2>
+							
+						</a>
+						<hr>
+					</div></section>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted">
+                    Copyright &copy; NotYourBoy Blog 2025
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/zjp.github.io/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/zjp.github.io/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/zjp.github.io/js/hux-blog.min.js"></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/zjp.github.io/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+
+
+<!-- Image to hack wechat -->
+<img src="/zjp.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

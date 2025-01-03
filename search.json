@@ -1,0 +1,635 @@
+[
+  
+    {
+      "title"    : "《JavaScript 二十年》推荐语",
+      "subtitle" : "",
+      "tags"     : "Web, JavaScript",
+      "url"      : "/zjp.github.io/2021/04/10/js-20yrs-preface/",
+      "date"     : "2021-04-10 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "作为一个前端，看不懂@黄玄 的几乎每一个回答，只有我自己吗？",
+      "subtitle" : "Taking this chance to reflect on myself",
+      "tags"     : "知乎, Meta",
+      "url"      : "/zjp.github.io/2020/07/05/reflection-2020/",
+      "date"     : "2020-07-05 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Data Representation - Floating Point Numbers",
+      "subtitle" : "「数据表示」浮点数",
+      "tags"     : "笔记, 基础, C, C++",
+      "url"      : "/zjp.github.io/2020/06/21/data-rep-float/",
+      "date"     : "2020-06-21 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Data Representation - Integer",
+      "subtitle" : "「数据表示」整数",
+      "tags"     : "笔记, 基础, C, C++",
+      "url"      : "/zjp.github.io/2020/06/19/data-rep-int/",
+      "date"     : "2020-06-19 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "My Programming Languages Spectrum",
+      "subtitle" : "我的编程语言光谱",
+      "tags"     : "",
+      "url"      : "/zjp.github.io/2020/05/05/pl-chart/",
+      "date"     : "2020-05-05 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "React Hooks 是否可以改为用类似 Vue 3 Composition API 的方式实现？",
+      "subtitle" : "Thinking in React vs. Thinking in Vue",
+      "tags"     : "知乎, Web, React",
+      "url"      : "/zjp.github.io/2020/04/03/react-hooks-vue-composition/",
+      "date"     : "2020-04-03 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "2019 年 PWA(Progressive Web App) 凉了吗？",
+      "subtitle" : "Is PWA effectively dead in 2019?",
+      "tags"     : "知乎, Web, PWA",
+      "url"      : "/zjp.github.io/2019/11/19/is-pwa-dead-in-2019/",
+      "date"     : "2019-11-19 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "把「终端下的 Vim」作为 macOS Finder 的打开方式",
+      "subtitle" : "Open file with terminal Vim from the macOS Finder",
+      "tags"     : "Vim",
+      "url"      : "/zjp.github.io/2019/09/03/vim-from-finder/",
+      "date"     : "2019-09-03 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-QC」2 TypeClasses",
+      "subtitle" : "Quickcheck - A Tutorial on Typeclasses in Coq",
+      "tags"     : "SF (软件基础), QC (Quickcheck), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/09/02/sf-qc-02-typeclasses/",
+      "date"     : "2019-09-02 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」19 PE",
+      "subtitle" : "Programming Language Foundations - Partial Evaluation",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/19/sf-plf-19-partial-eval/",
+      "date"     : "2019-03-19 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」18 UseAuto",
+      "subtitle" : "Programming Language Foundations - Theory And Practice Of Automation In Coq Proofs",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/18/sf-plf-18-use-auto/",
+      "date"     : "2019-03-18 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」17 UseTactics",
+      "subtitle" : "Programming Language Foundations - Tactic Library For Coq",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/17/sf-plf-17-use-tactics/",
+      "date"     : "2019-03-17 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」16 LibTactics",
+      "subtitle" : "Programming Language Foundations - A Collection of Handy General-Purpose Tactics",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/16/sf-plf-16-lib-tactics/",
+      "date"     : "2019-03-16 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」15 Norm",
+      "subtitle" : "Programming Language Foundations - Normalization of STLC",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/15/sf-plf-15-norm-STLC/",
+      "date"     : "2019-03-15 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」14 RecordSub",
+      "subtitle" : "Programming Language Foundations - Subtyping with Records",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/14/sf-plf-14-record-sub/",
+      "date"     : "2019-03-14 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」13 References",
+      "subtitle" : "Programming Language Foundations - Typing Mutable References",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/13/sf-plf-13-references/",
+      "date"     : "2019-03-13 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」12 Records",
+      "subtitle" : "Programming Language Foundations - Adding Records To STLC",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/12/sf-plf-12-records/",
+      "date"     : "2019-03-12 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」11. TypeChecking",
+      "subtitle" : "Programming Language Foundations - A Typechecker for STLC",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/11/sf-plf-11-typechecking/",
+      "date"     : "2019-03-11 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」10 Sub",
+      "subtitle" : "Programming Language Foundations - Subtyping (子类型化)",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/10/sf-plf-10-subtyping/",
+      "date"     : "2019-03-10 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」9 MoreStlc",
+      "subtitle" : "Programming Language Foundations - More on The Simply Typed Lambda-Calculus",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/09/sf-plf-09-more-STLC/",
+      "date"     : "2019-03-09 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」8 StlcProp",
+      "subtitle" : "Programming Language Foundations - Properties of STLC",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/08/sf-plf-08-STLC-prop/",
+      "date"     : "2019-03-08 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」7 Stlc",
+      "subtitle" : "Programming Language Foundations - The Simply Typed Lambda-Calculus",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/07/sf-plf-07-STLC/",
+      "date"     : "2019-03-07 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」6 Types",
+      "subtitle" : "Programming Language Foundations - Type Systems",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/06/sf-plf-06-types/",
+      "date"     : "2019-03-06 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」5 Smallstep",
+      "subtitle" : "Programming Language Foundations - Small-Step Operational Semantics",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/05/sf-plf-05-smallstep/",
+      "date"     : "2019-03-05 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」4 HoareAsLogic",
+      "subtitle" : "Programming Language Foundations - Hoare Logic as a Logic",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/04/sf-plf-04-hoare-logic/",
+      "date"     : "2019-03-04 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」3 Hoare2",
+      "subtitle" : "Programming Language Foundations - Hoare Logic, Part II",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/03/sf-plf-03-hoare-2/",
+      "date"     : "2019-03-03 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」2 Hoare",
+      "subtitle" : "Programming Language Foundations - Hoare Logic, Part I ",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/02/sf-plf-02-hoare-1/",
+      "date"     : "2019-03-02 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-PLF」1 Equiv",
+      "subtitle" : "Programming Language Foundations - Program Equivalence (程序的等价关系)",
+      "tags"     : "SF (软件基础), PLF (编程语言基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/03/01/sf-plf-01-equiv/",
+      "date"     : "2019-03-01 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」16 Auto",
+      "subtitle" : "Logical Foundations - More Automation",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/16/sf-lf-16-auto/",
+      "date"     : "2019-01-16 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」15 Extraction",
+      "subtitle" : "Logical Foundations - Extracting ML From Coq",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/15/sf-lf-15-extraction/",
+      "date"     : "2019-01-15 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」14 ImpCEvalFun",
+      "subtitle" : "Logical Foundations - An Evaluation Function For Imp",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/14/sf-lf-14-imp-ceval/",
+      "date"     : "2019-01-14 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」13 ImpParser",
+      "subtitle" : "Logical Foundations - Lexing And Parsing In Coq",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/13/sf-lf-13-imp-parser/",
+      "date"     : "2019-01-13 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」12 Imp",
+      "subtitle" : "Logical Foundations - Simple Imperative Programs",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/12/sf-lf-12-imp/",
+      "date"     : "2019-01-12 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」11 Rel",
+      "subtitle" : "Logical Foundations - Properties of Relations",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/11/sf-lf-11-rel/",
+      "date"     : "2019-01-11 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」10 IndPrinciples",
+      "subtitle" : "Logical Foundations - Induction Principles",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/10/sf-lf-10-ind-principle/",
+      "date"     : "2019-01-10 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」9 ProofObjects",
+      "subtitle" : "Logical Foundations - The Curry-Howard Correspondence ",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/09/sf-lf-09-proof-object/",
+      "date"     : "2019-01-09 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」8 Maps",
+      "subtitle" : "Logical Foundations - Total and Partial Maps",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/08/sf-lf-08-map/",
+      "date"     : "2019-01-08 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」7 Ind Prop",
+      "subtitle" : "Logical Foundations - Inductively Defined Propositions (归纳定义命题)",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/07/sf-lf-07-indprop/",
+      "date"     : "2019-01-07 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」6 Logic",
+      "subtitle" : "Logical Foundations - Logic in Coq",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/06/sf-lf-06-logic/",
+      "date"     : "2019-01-06 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」5 Tactics",
+      "subtitle" : "Logical Foundations - More Basic Tactics",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/05/sf-lf-05-tactics/",
+      "date"     : "2019-01-05 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」4 Poly",
+      "subtitle" : "Logical Foundations - Polymorphism and Higher-Order Functions",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/04/sf-lf-04-poly/",
+      "date"     : "2019-01-04 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」3 List",
+      "subtitle" : "Logical Foundations - Working with Structured Data",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/03/sf-lf-03-list/",
+      "date"     : "2019-01-03 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」2 Induction",
+      "subtitle" : "Logical Foundations - Proof by Induction",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/02/sf-lf-02-induction/",
+      "date"     : "2019-01-02 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「SF-LC」1 Basics",
+      "subtitle" : "Logical Foundations - Functional Programming in Coq",
+      "tags"     : "LF (逻辑基础), SF (软件基础), Coq, 笔记",
+      "url"      : "/zjp.github.io/2019/01/01/sf-lf-01-basics/",
+      "date"     : "2019-01-01 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Vim 与中文输入法",
+      "subtitle" : "Using Vim with non-english input method",
+      "tags"     : "Vim",
+      "url"      : "/zjp.github.io/2018/10/06/vim-cn-im/",
+      "date"     : "2018-10-06 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Avoiding success at all cost",
+      "subtitle" : "Watching &quot;Escape from the Ivory Tower: The Haskell Journey&quot;",
+      "tags"     : "Haskell, 笔记, En",
+      "url"      : "/zjp.github.io/2018/09/27/avoiding-success-at-all-cost/",
+      "date"     : "2018-09-27 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "程序员中的梦想家",
+      "subtitle" : "Dreamers among programmers",
+      "tags"     : "Facebook, Meta",
+      "url"      : "/zjp.github.io/2018/06/30/dreamer/",
+      "date"     : "2018-06-30 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "《PWA 实战》推荐序",
+      "subtitle" : "",
+      "tags"     : "Web, PWA",
+      "url"      : "/zjp.github.io/2018/05/11/pwa-zh-preface/",
+      "date"     : "2018-05-11 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "如何证明不可计算的函数比可计算的函数多？",
+      "subtitle" : "Why is there more uncomputable functions?",
+      "tags"     : "知乎, 计算理论",
+      "url"      : "/zjp.github.io/2017/12/12/uncomputable-funcs/",
+      "date"     : "2017-12-12 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "如何通俗地解释停机问题？",
+      "subtitle" : "How to explain the Halting Problem?",
+      "tags"     : "知乎, 计算理论",
+      "url"      : "/zjp.github.io/2017/12/12/halting-problem/",
+      "date"     : "2017-12-12 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "为什么 CSS 这么难学？",
+      "subtitle" : "Why I dislike CSS as a programming language",
+      "tags"     : "Web, CSS, 知乎",
+      "url"      : "/zjp.github.io/2017/10/06/css-complaints/",
+      "date"     : "2017-10-06 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Farewell, Flash. 感谢你，但这一次是真正的永别。",
+      "subtitle" : "So long, and thanks for all the Flash",
+      "tags"     : "Web, Flash",
+      "url"      : "/zjp.github.io/2017/07/26/farewell-flash/",
+      "date"     : "2017-07-26 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "饿了么的 PWA 升级实践",
+      "subtitle" : "Upgrading Ele.me to Progressive Web App",
+      "tags"     : "Web, PWA",
+      "url"      : "/zjp.github.io/2017/07/12/upgrading-eleme-to-pwa/",
+      "date"     : "2017-07-12 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "How does SW-Precache works?",
+      "subtitle" : "",
+      "tags"     : "Web, PWA, En",
+      "url"      : "/zjp.github.io/2017/05/28/sw-precache/",
+      "date"     : "2017-05-28 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "如何理解 &lt;code&gt;document&lt;/code&gt; 对象是 &lt;code&gt;HTMLDocument&lt;/code&gt; 的实例？",
+      "subtitle" : "Why is &lt;code&gt;document&lt;/code&gt; an instance of &lt;code&gt;HTMLDocument&lt;/code&gt;?",
+      "tags"     : "Web, 知乎",
+      "url"      : "/zjp.github.io/2017/04/06/html-document/",
+      "date"     : "2017-04-06 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "下一代 Web 应用模型 —— Progressive Web App",
+      "subtitle" : "The Next Generation Application Model For The Web - Progressive Web App",
+      "tags"     : "Web, PWA",
+      "url"      : "/zjp.github.io/2017/02/09/nextgen-web-pwa/",
+      "date"     : "2017-02-09 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "如何客观地评价「小程序」的体验?",
+      "subtitle" : "Wechat Mini-Program vs. the Web, a UX comparison",
+      "tags"     : "Web, 微信, UX/UI",
+      "url"      : "/zjp.github.io/2017/01/09/wechat-miniapp-ux/",
+      "date"     : "2017-01-09 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Service Worker 101「GDG DevFest 2016 北京」",
+      "subtitle" : "🎞  Slides:Service Worker 101, Working Offline and Instant Loading (GDG DevFest 2016 Beijing)",
+      "tags"     : "Slides, Web, PWA",
+      "url"      : "/zjp.github.io/2016/11/20/sw-101-gdgdf/",
+      "date"     : "2016-11-20 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Progressive Web Apps，复兴序章「QCon 上海 2016」",
+      "subtitle" : "🎞  Slides:Progressive Web Apps, Make Web Great Again. (QCon Shanghai 2016)",
+      "tags"     : "Slides, Web, PWA",
+      "url"      : "/zjp.github.io/2016/10/20/pwa-qcon2016/",
+      "date"     : "2016-10-20 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Web 在继续离我们远去",
+      "subtitle" : "After the release of Wechat Mini-Program",
+      "tags"     : "Web, 微信",
+      "url"      : "/zjp.github.io/2016/09/22/the-open-web/",
+      "date"     : "2016-09-22 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Progressive Web App 之我见",
+      "subtitle" : "🎞  Slides:Progressive Web App, in my points of view",
+      "tags"     : "Slides, Web, PWA",
+      "url"      : "/zjp.github.io/2016/06/05/pwa-in-my-pov/",
+      "date"     : "2016-06-05 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「译」React vs Angular 2：冰与火之歌",
+      "subtitle" : "React versus Angular 2: There Will Be Blood",
+      "tags"     : "Web, JavaScript, 译",
+      "url"      : "/zjp.github.io/2016/02/01/React-vs-Angular2/",
+      "date"     : "2016-02-01 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "都 2015 年了，CSS 怎么还是这么糟糕",
+      "subtitle" : "🎞  Slides:CSS Still Sucks 2015",
+      "tags"     : "Web, CSS",
+      "url"      : "/zjp.github.io/2015/12/28/css-sucks-2015/",
+      "date"     : "2015-12-28 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「译」iOS 9，为前端世界都带来了些什么？",
+      "subtitle" : "iOS 9, Safari and the Web: 3D Touch, new Responsive Web Design, Native integration and HTML5 APIs",
+      "tags"     : "Web, 译",
+      "url"      : "/zjp.github.io/2015/12/15/ios9-safari-web/",
+      "date"     : "2015-12-15 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "设计师如何学习前端？",
+      "subtitle" : "How designers learn front-end development?",
+      "tags"     : "知乎, Web, UX/UI",
+      "url"      : "/zjp.github.io/2015/10/28/how-designer-learn-fe/",
+      "date"     : "2015-10-28 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "「译」ES5, ES6, ES2016, ES.Next: JavaScript 的版本是怎么回事？",
+      "subtitle" : "ES5, ES6, ES2016, ES.Next: What&#39;s going on with JavaScript versioning?",
+      "tags"     : "Web, JavaScript, 译",
+      "url"      : "/zjp.github.io/2015/09/22/js-version/",
+      "date"     : "2015-09-22 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "JavaScript 模块化七日谈",
+      "subtitle" : "🎞  Slides:JavaScript Modularization Journey",
+      "tags"     : "Slides, Web, JavaScript",
+      "url"      : "/zjp.github.io/2015/07/09/js-module-7day/",
+      "date"     : "2015-07-09 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "聊聊「阿里旅行 · 去啊」",
+      "subtitle" : "聊聊在线旅行行业与老东家的产品思路",
+      "tags"     : "产品, 阿里",
+      "url"      : "/zjp.github.io/2015/06/15/alitrip-strategy/",
+      "date"     : "2015-06-15 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "See you, Alibaba ",
+      "subtitle" : "再见，阿里。",
+      "tags"     : "Meta, 阿里",
+      "url"      : "/zjp.github.io/2015/05/11/see-u-ali/",
+      "date"     : "2015-05-11 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "hUX 随想录（二）：操作系统的浪漫主义 —— Metro 篇",
+      "subtitle" : "信息、载体、抽象、UI 设计乱谈",
+      "tags"     : "hUX 随想录, UX/UI",
+      "url"      : "/zjp.github.io/2015/04/15/os-metro/",
+      "date"     : "2015-04-15 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Unix/Linux 扫盲笔记",
+      "subtitle" : "不适合人类阅读，非常水的自我笔记",
+      "tags"     : "笔记",
+      "url"      : "/zjp.github.io/2015/04/14/unix-linux-note/",
+      "date"     : "2015-04-14 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "hUX 随想录（一）：Digital native 数字原住民",
+      "subtitle" : " 两岁的侄女天天叫着手机手机 ",
+      "tags"     : "hUX 随想录, UX/UI",
+      "url"      : "/zjp.github.io/2015/03/25/digital-native/",
+      "date"     : "2015-03-25 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "如何评价 2015 年 3 月 9 日 Apple 春季发布会？",
+      "subtitle" : "聊聊科技与新式奢侈品",
+      "tags"     : "知乎, 产品",
+      "url"      : "/zjp.github.io/2015/03/10/apple-event-2015/",
+      "date"     : "2015-03-10 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Hello 2015",
+      "subtitle" : " &quot;Hello World, Hello Blog&quot;",
+      "tags"     : "Meta",
+      "url"      : "/zjp.github.io/2015/01/29/hello-2015/",
+      "date"     : "2015-01-29 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "如何看待微信屏蔽快的打车事件？",
+      "subtitle" : "恰有小感。",
+      "tags"     : "知乎, 产品",
+      "url"      : "/zjp.github.io/2014/12/13/wechat-block-kuaidi/",
+      "date"     : "2014-12-13 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "你们觉得响应式好呢，还是手机和PC端分开来写？",
+      "subtitle" : "",
+      "tags"     : "知乎, Web",
+      "url"      : "/zjp.github.io/2014/11/20/responsive-web-design/",
+      "date"     : "2014-11-20 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "为什么阿里系软件体验都不好？",
+      "subtitle" : "或许这就是所谓的企业 DNA ",
+      "tags"     : "知乎, 产品, 阿里",
+      "url"      : "/zjp.github.io/2014/10/01/why-alibaba-ux-sucks/",
+      "date"     : "2014-10-01 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "对中国用户而言，Pure Android 是否比 MIUI 或 Flyme 体验更好？",
+      "subtitle" : "",
+      "tags"     : "知乎, 产品, UX/UI",
+      "url"      : "/zjp.github.io/2014/09/04/is-pure-android-better/",
+      "date"     : "2014-09-04 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "如何评价 MIUI 6？",
+      "subtitle" : "",
+      "tags"     : "知乎, 产品, UX/UI",
+      "url"      : "/zjp.github.io/2014/08/16/miui6/",
+      "date"     : "2014-08-16 12:00:00 +0000"
+    } 
+  
+]
