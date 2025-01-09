@@ -1,4 +1,4 @@
-Hey，我是张佳鹏（ notyourboy，zjp， @notyourboy_zz ），一个略懂计算机科学与艺术的斜杆不动青年；毕业于中国人民大学计算机科学与技术专业，主攻前端开发；喜欢钻研一些计算机科学相关的东西，比如编译原理、操作系统、计算机网络、分布式系统等。不久前自己小玩了一个AI开源项目，[aichatbot.github.io](https://notyourboy-zjp.github.io/aichatbot.github.io/)，欢迎大家提建议。
+Hey，我是张佳鹏（ notyourboy，zjp， @notyourboy_zz ），一个略懂计算机科学与艺术的斜杆不动青年；毕业于中国人民大学计算机科学与技术专业，主攻前端开发；喜欢钻研一些计算机科学相关的东西，比如编译原理、操作系统、计算机网络、分布式系统等。不久前自己小玩了一个AI开源项目，[aichatbot.github.io](https://aichatbot.zhangjiapeng.cn/)，欢迎大家提建议。
 
 <!-- Hey，我是张佳鹏（notyourboy   Zjp, _@notyourboy_zz_），一个略懂计算机科学与艺术的斜杆不动青年;自诩是一个[广院](https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E5%AA%92%E5%A4%A7%E5%AD%A6)数字媒体艺术系与 RIT 计算机科学系（师从 [Prof. Matthew Fluet](https://www.cs.rit.edu/~mtf/) 专攻编程语言）杂交出来的[黑客与画家](https://book.douban.com/subject/6021440/)。 -->
 

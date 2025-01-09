@@ -3,12 +3,12 @@
     "title": "NotYourBoy Blog",
     "author": "NotYourBoy <zjp960903@gmail.com>",
     "version": "1.0.0",
-    "homepage": "https://notyourboy-zjp.github.io/zjp.github.io",
+    "homepage": "https://blog.zhangjiapeng.cn",
     "repository": {
         "type": "git",
-        "url": "https://github.com/notyourboy-zjp/zjp.github.io"
+        "url": "https://github.com/notyourboy-zjp/blog.github.io"
     },
-    "bugs": "https://github.com/notyourboy-zjp/zjp.github.io/issues",
+    "bugs": "https://github.com/notyourboy-zjp/blog.github.io/issues",
     "devDependencies": {
         "grunt": ">=1.3.0",
         "grunt-banner": "~0.2.3",
