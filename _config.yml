@@ -75,7 +75,7 @@ ga_domain: "" # 清空 Google Analytics 域名
 # Sidebar settings
 sidebar: true
 sidebar-about-description: "要做一个有 swag 的程序员"
-sidebar-avatar: "img/avatar.jpg" # 修改头像路径，添加 baseurl 前缀
+sidebar-avatar: "/img/avatar.jpg" # 修改头像路径，添加 baseurl 前缀
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
